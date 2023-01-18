@@ -11,10 +11,10 @@ const connect = function () {
   });
 
   conn.on("connect", () => {
-    console.log("Name: MCD")
+    console.log("Name: MCD");
   });
 
-  
+
   conn.on("data", (data) => {
     console.log(data);
   });
