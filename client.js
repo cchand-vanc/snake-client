@@ -11,15 +11,12 @@ const connect = function () {
   });
 
   conn.on("connect", () => {
-    console.log("Name: MCD");
+    conn.write("Name: MCD");
   });
-
 
   conn.on("data", (data) => {
     console.log(data);
   });
-  
-
 
   conn.setEncoding("utf8");
 
@@ -27,4 +24,4 @@ const connect = function () {
 
 };
 
-module.exports = connect;
+module.exports = { connect };
